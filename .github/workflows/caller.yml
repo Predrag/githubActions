@@ -1,0 +1,14 @@
+name: Call a reusable workflow
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+    call-workflow-passing-data:
+      uses: ./.github/workflows/template.yml
+      with:
+        config-path: 'ahoj'
+      secrets:
+        envPAT: ${{ secrets.envPAT }}
