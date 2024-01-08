@@ -11,8 +11,5 @@ jobs:
       with:
         config-path: 'ahoj'
       secrets:
-        envPAT: ${{ secrets.develop.ENVPAT }}
-    echo:
-        runs-on: ubuntu-latest
-        steps:
-          - run: echo ${{ secrets.ENVPAT }}
+        envPAT: ${{ secrets.ENVPAT }}
+        run: echo ${{ secrets.ENVPAT }}
