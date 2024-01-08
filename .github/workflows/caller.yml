@@ -11,4 +11,4 @@ jobs:
       with:
         config-path: 'ahoj'
       secrets:
-        envPAT: ${{ secrets.envPAT }}
+        envPAT: ${{ secrets.envPAT1 }}
